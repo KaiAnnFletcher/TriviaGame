@@ -1,0 +1,11 @@
+body {
+    background-image: url("../images/Trivia-background.png");
+}
+
+.container {
+    padding: 5%;
+}
+
+.card {
+    font-family: 'Courier New', Courier, monospace;
+}

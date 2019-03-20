@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!--link to CSS reset file-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--link to CSS file-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--link to jQuery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Welcome to Trivia</title>
+</head>
+
+<body>
+    <!--First step is to create the skeleton of the web page that contains the game and includes all bootstrap divs
+with relevent headers and text-->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="height: 50rem;">
+                    <h1 class="card-header text-center">Timer!</h1>
+                    <div class="card-body text-center">
+                        <div class="border" id="Timer"><!--Implement Timer here--></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                 <div class="card" style="height: 50rem;">
+                    <h1 class="card-header text-center">Questions!</h1>
+                    <div class="card-body text-center">
+                        <div class="border" id="Start-div">Click Start to begin &nbsp;</div>
+                        <br>
+                        <br>
+                        <div class="border" id="Questions"><!--Questions get dynamically added here using jQuery--></div>
+                        <br>
+                        <br>
+                        <div class="border" id="Choices"><!--Choices get dynamically added here using jQuery--></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./assets/javascript/app.js"></script>
+    </body>
+
+</html>
